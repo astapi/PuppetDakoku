@@ -6,14 +6,12 @@ const app = new App({
   token: process.env.SLACK_BOT_TOKEN,
   signingSecret: process.env.SLACK_SIGNING_SECRET
 });
-app.command('/出勤', async ({ ack, say }: any) => {
-  ack();
-  dakoku('clockin');
+app.message('出勤', async ({ say }: any) => {
+  await dakoku('clockin');
   say('出勤したかも');
 });
-app.command('/退勤', async ({ ack, say }: any) => {
-  ack();
-  dakoku('clockout');
+app.message('退勤', async ({ say }: any) => {
+  await dakoku('clockout');
   say('退勤したかも');
 });
 
