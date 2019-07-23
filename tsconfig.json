@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "lib": ["es2017", "dom"],
+    "module": "commonjs",
+    "target": "es6",
+    "allowJs": true,
+    "outDir": "lib",
+    "strict": true,
+    "sourceMap": true,
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "alwaysStrict": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "strictNullChecks": true,
+    "pretty": true,
+    "noEmitHelpers": false,
+    "importHelpers": true,
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true
+  },
+  "exclude": [
+    "node_modules"
+  ],
+  "include": [
+    "src/**/*.ts"
+  ]
+}
