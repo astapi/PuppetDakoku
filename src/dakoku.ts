@@ -1,7 +1,7 @@
 import * as puppeteer from 'puppeteer';
 
 const launchOptions = {
-  headless: false,
+  headless: true,
   args: ['--no-sandbox'],
 };
 
